@@ -18,7 +18,7 @@
 		zephyr,sram = &sram0;
 		zephyr,flash = &flash0;
 		zephyr,dtcm = &dtcm;
-		zephyr,can-primary = &can1;
+		zephyr,can-primary = &can2;
 	};
 
 	leds {
@@ -97,6 +97,15 @@
 };
 
 &can1 {
+	bus-speed = <125000>;
+	sjw = <1>;
+	prop-seg = <0>;
+	phase-seg1 = <6>;
+	phase-seg2 = <5>;
+	status = "okay";
+};
+
+&can2 {
 	bus-speed = <125000>;
 	sjw = <1>;
 	prop-seg = <0>;
