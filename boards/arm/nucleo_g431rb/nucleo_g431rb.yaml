@@ -20,3 +20,5 @@ supported:
   - counter
   - spi
   - dac
+  - can
+  - canfd
